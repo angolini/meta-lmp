@@ -739,6 +739,19 @@ UBOOT_DTBO_LOADADDRESS:am62xx = "0x89000000"
 EFI_PROVIDER:am62xx = ""
 LMP_BOOT_FIRMWARE_FILES:am62xx = "tispl.bin u-boot.img tiboot3-am62x-gp-evm.bin tiboot3-am62x-hs-evm.bin tiboot3-am62x-hs-fs-evm.bin"
 LMP_BOOT_FIRMWARE_FILES:append:sota:am62xx = " boot.itb"
+KERNEL_DEVICETREE:remove:am62xx = " \
+    ti/k3-am625-beagleplay-csi2-ov5640.dtbo \
+    ti/k3-am625-beagleplay-csi2-tevi-ov5640.dtbo \
+    ti/k3-am625-phyboard-lyra-rdk.dtb \
+    ti/k3-am625-verdin-nonwifi-dahlia.dtb \
+    ti/k3-am625-verdin-nonwifi-dev.dtb \
+    ti/k3-am625-verdin-nonwifi-mallow.dtb \
+    ti/k3-am625-verdin-nonwifi-yavia.dtb \
+    ti/k3-am625-verdin-wifi-dahlia.dtb \
+    ti/k3-am625-verdin-wifi-dev.dtb \
+    ti/k3-am625-verdin-wifi-mallow.dtb \
+    ti/k3-am625-verdin-wifi-yavia.dtb \
+"
 ## am62xx-evm
 SOTA_CLIENT_FEATURES:append:am62xx-evm = " ubootenv"
 ## beagleplay
@@ -761,6 +774,14 @@ UBOOT_DTB_LOADADDRESS:am64xx = "0x88000000"
 EFI_PROVIDER:am64xx = ""
 LMP_BOOT_FIRMWARE_FILES:am64xx = "tispl.bin u-boot.img tiboot3-am64x-gp-evm.bin tiboot3-am64x_sr2-hs-evm.bin tiboot3-am64x_sr2-hs-fs-evm.bin"
 LMP_BOOT_FIRMWARE_FILES:append:sota:am64xx = " boot.itb"
+KERNEL_DEVICETREE:remove:am64xx = " \
+    ti/k3-am642-hummingboard-t-pcie.dtbo \
+    ti/k3-am642-hummingboard-t-usb3.dtbo \
+    ti/k3-am642-hummingboard-t.dtb \
+    ti/k3-am642-phyboard-electra-gpio-fan.dtbo \
+    ti/k3-am642-phyboard-electra-rdk.dtb \
+    ti/k3-am642-tqma64xxl-mbax4xxl.dtb \
+"
 ## am64xx-evm
 SOTA_CLIENT_FEATURES:append:am64xx-evm = " ubootenv"
 
