@@ -723,6 +723,8 @@ WKS_FILE_DEPENDS:append:k3 = " virtual/bootloader"
 OSTREE_DEPLOY_USR_OSTREE_BOOT:k3 = "${@bb.utils.contains('DISTRO_FEATURES', 'luks', '1', '0', d)}"
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS:remove:k3 = "kernel-image-image"
 KERNEL_DEVICETREE:beaglebone-yocto = "${DTB_FILES}"
+# FIXME: wip to test lmp-base
+UBOOT_SIGN_ENABLE:k3:lmp-base = "0"
 
 # TI AM62x
 MACHINE_FEATURES:append:am62xx = " optee"
